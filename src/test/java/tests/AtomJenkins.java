@@ -1,12 +1,12 @@
 package tests;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static java.lang.Boolean.parseBoolean;
 import static java.lang.System.*;
 import static java.lang.System.getProperty;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AtomJenkins {
 
@@ -25,6 +25,12 @@ public class AtomJenkins {
         fail();
     }
 
+
+    @Test
+    @DisplayName("Test from captain obviousness")
+    void successTest3() {
+        assertEquals(true==true,false==false);
+    }
 
 
 }
